@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  renren.fast.api:
+    image: ${DOCKER_REGISTRY-}renrenfastapi
+    build:
+      context: .
+      dockerfile: RenRen.Fast.Api/Dockerfile
+    ports:
+      - "9003:9003"
