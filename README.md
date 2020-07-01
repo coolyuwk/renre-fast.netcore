@@ -1,5 +1,9 @@
 # renre-fast.netcore
 
+### 预览地址
+http://47.100.113.74:10003/  
+用户名: admin   
+密码：admin   
 
 ### 简单介绍  
 此项目是renre-fast的.net core 3.1后台，代码比较清蒸。
@@ -28,5 +32,5 @@
 
 2. 设置RenRen.Fast.Api为启动项目（如果安装Docker可以设置docker-compose为启动项目），启动后表结构和初始数据会自动迁移到目标数据库
 
-3. 打开 http://localhost:9003 登录使用默认用户名: admin 密码：admin 
+3. 打开 http://localhost:9003 登录
 
