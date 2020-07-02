@@ -3,5 +3,5 @@ set-location $PSScriptRoot
 dotnet build 
 dotnet pack -o ./bin/pack
 set-location ./bin/pack
-dotnet nuget push *.nupkg -k Au7NhjXCFcd4 -s http://47.112.156.106:8003/
+dotnet nuget push *.nupkg -k oy2gqky4azbfofqxgwja53rre4p5jquerenr6zicb2kvlq -s  https://api.nuget.org/v3/index.json
 remove-item ./* -Recurse
