@@ -27,6 +27,12 @@ namespace RenRen.Fast.Api.Entity
         [Column("password")]
         [MaxLength(FiledLength.Password)]
         public string Password { get; set; }
+
+        [JsonIgnore]
+        [Column("salt")]
+        [MaxLength(FiledLength.Guid)]
+        public string Salt { get; set; }
+
         /// <summary>
         /// 用户状态
         /// </summary>
