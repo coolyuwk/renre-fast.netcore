@@ -54,6 +54,7 @@ namespace RenRen.Fast.Api.Modules.Sys.Controllers
         /// 获取登录的用户信息
         /// </summary>
         [HttpGet("info")]
+        [RequiresPermissions(ClaimType.Oauth2)]
         public async Task<R> InfoAsync()
         {
             var user = await _passportDbContext.SysUser.FindAsync(_loginUser.UserId);
